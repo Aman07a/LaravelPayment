@@ -14,6 +14,13 @@ class CurrenciesTableSeeder extends Seeder
      */
     public function run()
     {
+        /**
+         * [$currencies description]
+         *
+         * usd = dollar
+         * eur = euro
+         * gbp = pond
+         */
         $currencies = [
             'usd',
             'eur',
