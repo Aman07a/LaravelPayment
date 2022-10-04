@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.udemy.com/course/laravel-payment-processing-integrating-the-best-gateways-paypal-stripe/" target="_blank"><img src="https://i2.wp.com/www.annamariapacilli.it/wp-content/uploads/2020/02/2570404_4ebb_7.jpg?w=480&ssl=1" width="400"></a></p>
+<p align="left"><a href="https://www.udemy.com/course/laravel-payment-processing-integrating-the-best-gateways-paypal-stripe/" target="_blank"><img src="https://i2.wp.com/www.annamariapacilli.it/wp-content/uploads/2020/02/2570404_4ebb_7.jpg?w=480&ssl=1" width="400"></a></p>
 
 ## **Course: Laravel Payment and Subscription Processing: PayPal & Stripe**
 ### Use API calls to integrate PayPal and Stripe in Laravel. Start receiving online payments from a Laravel project.
