@@ -1,64 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://www.udemy.com/course/laravel-payment-processing-integrating-the-best-gateways-paypal-stripe/" target="_blank"><img src="https://i2.wp.com/www.annamariapacilli.it/wp-content/uploads/2020/02/2570404_4ebb_7.jpg?w=480&ssl=1" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## **Course: Laravel Payment and Subscription Processing: PayPal & Stripe**
+### Use API calls to integrate PayPal and Stripe in Laravel. Start receiving online payments from a Laravel project.
+-----------------------------
 
-## About Laravel
+## **Learning**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Integrate the best payment platforms in your projects
+- Start receiving payments, integrating the platforms you need
+- Integrate PayPal into your projects, to receive payments online
+- Adapt your projects to use different payment platforms
+- Integrate Stripe to receive payments in your projects
+- Provide multiple payment alternatives to your users (platforms and currencies)
+- Handle payments in different currencies across multiple payment platforms
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## **Requirements**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Have PHP installed and functional in your system (at least PHP 7.3 is recommended)
+- Have composer installed and functional in your development environment
+- Recommended, PHP basic skills
+- Everything else I will teach you how to implement it
 
-## Learning Laravel
+## **Description**
+Learn to integrate multiple payment platforms at once in the same Laravel project, using as an example the most popular payment gateways (PayPal and Stripe).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Do you want to start receiving payments and subscriptions on your existing projects?
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Me too. And in this course, I teach you how to achieve it without getting crazy in the process, using Laravel.
 
-## Laravel Sponsors
+## Process payments with Laravel and the best payment platforms.
+Let's be honest; we currently don't have time to go line by line reading and understanding the documentation to test and fail with each platform. For that reason, I guide you along with the direct pat in this course to integrate the current times'  best online payment and e-commerce platforms. EVERYTHING in the same Laravel project.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Receive recurring payments (subscriptions)
+Don't stop there. You will also learn how to process subscriptions for your users and receive recurring payments on any of your Laravel projects.
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## **Who is this course for:**
+- Developers with websites that need to integrate different payment platforms
+- Those who need to use the best online payment platforms
+- Those who need to integrate PayPal as a payment platform in their projects
+- Those looking to integrate Stripe as a payment platform
+- Those who want to use Laravel to process payments
+- Curious web developers regarding the usage of multiple payment platforms with Laravel
