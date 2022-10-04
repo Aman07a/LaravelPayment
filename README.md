@@ -3,7 +3,6 @@
 ## **Course: Laravel Payment and Subscription Processing: PayPal & Stripe**
 Use API calls to integrate PayPal and Stripe in Laravel. 
 Start receiving online payments from a Laravel project.
------------------------------
 
 ## **Learning**
 
