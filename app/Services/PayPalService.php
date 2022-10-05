@@ -9,7 +9,9 @@ class PayPalService
     use ConsumesExternalServices;
 
     protected $baseUri;
+
     protected $clientId;
+
     protected $clientSecret;
 
     public function __construct()
