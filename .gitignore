@@ -172,3 +172,5 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/laravel,composer,node
+
+public/postman/
