@@ -1,0 +1,14 @@
+php artisan tinker 
+
+$paypal = new App\Services\PayPalService;
+
+version 1.0 (deprecated):
+$paypal->makeRequest('GET', '/v1/invoicing/invoices');
+
+version 2.0:
+$paypal->makeRequest('GET', '/v2/invoicing/generate-next-invoice-number');
+
+REST API URLs
+Sandbox: https://api-m.sandbox.paypal.com
+Live: https://api-m.paypal.com
+curl -v https://api-m.sandbox.paypal.com/v1/oauth2/token \ -H "Accept: application/json" \ -H "Accept-Language: en_US" \ -u "client_id:secret" \ -d "grant_type=client_credentials"
