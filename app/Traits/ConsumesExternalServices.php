@@ -24,8 +24,6 @@ trait ConsumesExternalServices
 
         $response = $response->getBody()->getContents();
 
-        $response = $this->decodeResponse($response);
-
         if (method_exists($this, 'decodeResponse')) {
             $response = $this->decodeResponse($response);
         }
