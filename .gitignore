@@ -174,3 +174,4 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/laravel,composer,node
 
 public/postman/
+public/stripe/
