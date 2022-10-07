@@ -12,3 +12,9 @@ REST API URLs
 Sandbox: https://api-m.sandbox.paypal.com
 Live: https://api-m.paypal.com
 curl -v https://api-m.sandbox.paypal.com/v1/oauth2/token \ -H "Accept: application/json" \ -H "Accept-Language: en_US" \ -u "client_id:secret" \ -d "grant_type=client_credentials"
+
+StripeService 
+$stripe = new App\Services\StripeService;
+$stripe->makeRequest('GET', '/v1/balance');
+$stripe->createIntent(5.01, 'EUR', 'payment_method');
+$stripe->confirmPayment('pi_3LqKZeK1oiYfOJ3408RpQ88B');
