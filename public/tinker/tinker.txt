@@ -17,4 +17,4 @@ StripeService
 $stripe = new App\Services\StripeService;
 $stripe->makeRequest('GET', '/v1/balance');
 $stripe->createIntent(5.01, 'EUR', 'payment_method');
-$stripe->confirmPayment('pi_3LqKZeK1oiYfOJ3408RpQ88B');
+$stripe->confirmPayment('payment_id');
