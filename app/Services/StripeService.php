@@ -24,7 +24,7 @@ class StripeService
 
     public function resolveAuthorization(&$queryParams, &$formParams, &$headers)
     {
-        //
+        $headers['Authorization'] = $this->resolveAccessToken();
     }
 
     public function decodeResponse($response)
@@ -34,17 +34,48 @@ class StripeService
 
     public function resolveAccessToken()
     {
-        //
+        return "Bearer {$this->secret}";
     }
 
     public function handlePayment(Request $request)
     {
-        //
+        $request->validate([
+            'payment_method' => 'required',
+        ]);
+
+        $intent = $this->createIntent($request->value, $request->currency, $request->payment_method);
+
+        session()->put('paymentIntentId', $intent->id);
+
+        return redirect()->route('approval');
     }
 
     public function handleApproval()
     {
-        //
+        dump("Payment approved!");
+    }
+
+    public function createIntent($value, $currency, $paymentMethod)
+    {
+        return $this->makeRequest(
+            'POST',
+            '/v1/payment_intents',
+            [],
+            [
+                'amount' => round($value * $this->resolveFactor($currency)),
+                'currency' => strtolower($currency),
+                'payment_method' => $paymentMethod,
+                'confirmation_method' => 'manual',
+            ],
+        );
+    }
+
+    public function confirmPayment($paymentIntentId)
+    {
+        return $this->makeRequest(
+            'POST',
+            "/v1/payment_intents/{$paymentIntentId}/confirm",
+        );
     }
 
     public function resolveFactor($currency)
