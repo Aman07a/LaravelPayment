@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Seeder;
+use Database\Seeders\PlanSeeder;
+use Database\Seeders\UserSeeder;
 use Database\Seeders\CurrenciesTableSeeder;
 use Database\Seeders\PaymentPlatformsTableSeeder;
 
@@ -16,7 +17,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call(UserSeeder::class);
         $this->call(PaymentPlatformsTableSeeder::class);
         $this->call(CurrenciesTableSeeder::class);
+        $this->call(PlanSeeder::class);
     }
 }
