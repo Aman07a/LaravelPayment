@@ -79,8 +79,19 @@ class PayPalService
 
     public function handleSubscription(Request $request)
     {
-        dump($this->plans);
-        dump($request->all());
+        $subscription = $this->createSubscription(
+            $request->plan,
+            $request->user()->name,
+            $request->user()->email,
+        );
+
+        $subscriptionLinks = collect($subscription->links);
+
+        $approve = $subscriptionLinks->where('rel', 'approve')->first();
+
+        session()->put('subscriptionId', $subscription->id);
+
+        return redirect($approve->href);
     }
 
     public function createOrder($value, $currency)
