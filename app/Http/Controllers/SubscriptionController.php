@@ -53,6 +53,8 @@ class SubscriptionController extends Controller
 
     public function cancelled()
     {
-        // 
+        return redirect()
+            ->route('subscribe.show')
+            ->withErrors('You cancelled. Come back whenever you\'re ready');
     }
 }
