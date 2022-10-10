@@ -11,9 +11,9 @@ class StripeService
 
     protected $baseUri;
 
-    protected $clientId;
+    protected $key;
 
-    protected $clientSecret;
+    protected $secret;
 
     protected $plans;
 
@@ -81,7 +81,12 @@ class StripeService
 
         return redirect()
             ->route('home')
-            ->withErrors('We are unable to cofirm your payment. Try again, please');
+            ->withErrors('We are unable to confirm your payment. Try again, please');
+    }
+
+    public function handleSubscription(Request $request)
+    {
+        dd($this->plans, $request->all());
     }
 
     public function createIntent($value, $currency, $paymentMethod)
@@ -104,6 +109,20 @@ class StripeService
         return $this->makeRequest(
             'POST',
             "/v1/payment_intents/{$paymentIntentId}/confirm",
+        );
+    }
+
+    public function createCustomer($name, $email, $paymentMethod)
+    {
+        return $this->makeRequest(
+            'POST',
+            '/v1/customers',
+            [],
+            [
+                'name' => $name,
+                'email' => $email,
+                'payment_method' => $paymentMethod,
+            ],
         );
     }
 
