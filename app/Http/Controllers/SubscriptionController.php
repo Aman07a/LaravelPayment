@@ -48,7 +48,24 @@ class SubscriptionController extends Controller
 
     public function approval(Request $request)
     {
-        // 
+        $rules = [
+            'plan' => ['required', 'exists:plans,slug'],
+        ];
+
+        $request->validate($rules);
+
+        $plan = Plan::where('slug', $request->plan)->firstOrFail();
+        $user = $request->user();
+
+        $subscription = Subscription::create([
+            'active_until' => now()->addDays($plan->duration_in_days),
+            'user_id' => $user->id,
+            'plan_id' => $plan->id,
+        ]);
+
+        return redirect()
+            ->route('home')
+            ->withSuccess(['payment' => "Thanks, {$user->name}. You have now a {$plan->slug} subscription. Start using it now."]);
     }
 
     public function cancelled()
