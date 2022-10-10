@@ -25,6 +25,10 @@ return [
         'client_id' => env('PAYPAL_CLIENT_ID'),
         'client_secret' => env('PAYPAL_CLIENT_SECRET'),
         'class' => App\Services\PayPalService::class,
+        'plans' => [
+            'monthly' => env('PAYPAL_MONTHLY_PLAN'),
+            'yearly' => env('PAYPAL_YEARLY_PLAN'),
+        ],
     ],
 
     'postmark' => [
@@ -43,6 +47,10 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
         'class' => App\Services\StripeService::class,
+        'plans' => [
+            'monthly' => env('STRIPE_MONTHLY_PLAN'),
+            'yearly' => env('STRIPE_YEARLY_PLAN'),
+        ],
     ],
 
 ];
