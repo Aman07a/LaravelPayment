@@ -126,6 +126,23 @@ class StripeService
         );
     }
 
+    public function createSubscription($customerId, $paymentMethod, $priceId)
+    {
+        return $this->makeRequest(
+            'POST',
+            '/v1/subscriptions',
+            [],
+            [
+                'customer' => $customerId,
+                'items' => [
+                    ['price' => $priceId],
+                ],
+                'default_payment_method' => $paymentMethod,
+                'expand' => ['latest_invoice.payment_intent'],
+            ],
+        );
+    }
+
     public function resolveFactor($currency)
     {
         $zeroDecimalCurrencies = ['JPY'];
