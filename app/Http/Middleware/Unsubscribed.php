@@ -16,6 +16,10 @@ class Unsubscribed
      */
     public function handle(Request $request, Closure $next)
     {
+        if (optional($request->user())->hasActiveSubscription()) {
+            return redirect()->route('home');
+        }
+
         return $next($request);
     }
 }
