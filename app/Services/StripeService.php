@@ -112,6 +112,19 @@ class StripeService
             ->withErrors('We were unable to activate the subscrption. Try again, please.');
     }
 
+    public function validateSubscription(Request $request)
+    {
+        if (session()->has('subscriptionId')) {
+            $subscriptionId = session()->get('subscriptionId');
+
+            session()->forget('subscriptionId');
+
+            return $request->subscription_id == $subscriptionId;
+        }
+
+        return false;
+    }
+
     public function createIntent($value, $currency, $paymentMethod)
     {
         return $this->makeRequest(
